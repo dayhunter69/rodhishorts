@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.radial-gradient {
+  background: radial-gradient(circle at 0% 0%, #013593 40%, transparent 60%),
+    #dd0b39;
+}
+
+.linear-mask {
+  mask-image: linear-gradient(
+    -75deg,
+    white calc(var(--x) + 20%),
+    transparent calc(var(--x) + 30%),
+    white calc(var(--x) + 100%)
+  );
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    white calc(var(--x) + 20%),
+    transparent calc(var(--x) + 30%),
+    white calc(var(--x) + 100%)
+  );
+}
+
+.linear-overlay {
+  background-image: linear-gradient(
+    -75deg,
+    rgba(255, 255, 255, 0.1) calc(var(--x) + 20%),
+    rgba(255, 255, 255, 0.5) calc(var(--x) + 25%),
+    rgba(255, 255, 255, 0.1) calc(var(--x) + 100%)
+  );
+  mask: linear-gradient(black, black) content-box, linear-gradient(black, black);
+  -webkit-mask: linear-gradient(black, black) content-box,
+    linear-gradient(black, black);
+
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+}
+
+.user-select-none {
+  user-select: none;
+}
+.answer-enter {
+  opacity: 0;
+  max-height: 0;
+  transform: scaleY(0);
+}
+
+.answer-enter-active {
+  opacity: 1;
+  max-height: 200px; /* Adjust this value based on your content */
+  transform: scaleY(1);
+  transition: opacity 500ms ease-out, transform 500ms ease-out,
+    max-height 500ms ease-out;
+}
+
+.answer-exit {
+  opacity: 1;
+  max-height: 200px; /* Adjust this value based on your content */
+  transform: scaleY(1);
+}
+
+.answer-exit-active {
+  opacity: 0;
+  max-height: 0;
+  transform: scaleY(0);
+  transition: opacity 300ms ease-in, transform 300ms ease-in,
+    max-height 300ms ease-in;
+}
+
+li:hover {
+  cursor: pointer;
+}
