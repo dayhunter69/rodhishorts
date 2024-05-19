@@ -1,8 +1,10 @@
 import {
   FaFacebookF,
-  FaTwitter,
   FaInstagram,
   FaLinkedinIn,
+  FaPinterest,
+  FaTiktok,
+  FaYoutube,
 } from 'react-icons/fa';
 import logo from '../assets/RShorts.png';
 const Footer = () => {
@@ -35,32 +37,44 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.facebook.com/watch/rodhisource/?paipv=0&eav=Afa6yd10Zn-RWMIdahm1MO6Juk6-uflm9Su2Nba08Tvc8kxBSgXqSAZY7NuwvP-5Juw&_rdr"
                 className="text-gray-400 hover:text-white transition-colors duration-300"
               >
                 <FaFacebookF />
               </a>
               <a
-                href="#"
+                href="https://www.youtube.com/@rodhi.sources"
                 className="text-gray-400 hover:text-white transition-colors duration-300"
               >
-                <FaTwitter />
+                <FaYoutube />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/p/Ci5HeMzBJIg/?hl=en"
                 className="text-gray-400 hover:text-white transition-colors duration-300"
               >
                 <FaInstagram />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/82490648/admin/feed/posts/"
                 className="text-gray-400 hover:text-white transition-colors duration-300"
               >
                 <FaLinkedinIn />
               </a>
+              <a
+                href="https://www.pinterest.com/rodhisources/"
+                className="text-gray-400 hover:text-white transition-colors duration-300"
+              >
+                <FaTiktok />
+              </a>
+              <a
+                href="https://www.tiktok.com/@rodhi.sources"
+                className="text-gray-400 hover:text-white transition-colors duration-300"
+              >
+                <FaPinterest />
+              </a>
             </div>
           </div>
-          <div className="ml-10">
+          <div className="ml-10 mt-10">
             <h3 className="text-xl font-bold mb-4">Links</h3>
             <ul className="grid grid-cols-2 md:grid-cols-2 gap-4">
               <li onClick={HowItWorks}>How it works</li>

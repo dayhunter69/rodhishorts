@@ -18,9 +18,7 @@ const App = () => (
     </FadeInOutAnimation>
 
     <FadeInOutAnimation>
-      <ScrollAnimation>
-        <HowItWorks />
-      </ScrollAnimation>
+      <HowItWorks />
     </FadeInOutAnimation>
 
     <VideoSlider />
